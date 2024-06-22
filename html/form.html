@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form action="https://httpbin.org/post" method="POST">
+      <fieldset>
+        <legend>Login</legend>
+        <section>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </section>
+        <section>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </section>
+        <footer>
+          <button type="submit">🔒Sign in</button>
+          <input type="hidden" name="hidden-info" value="1214253456758667xyz" />
+        </footer>
+      </fieldset>
+    </form>
+  </body>
+</html>
