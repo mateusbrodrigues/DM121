@@ -1,0 +1,33 @@
+:root {
+  --border-width: 10px;
+}
+
+.container {
+  border: solid darkblue;
+  border-width: var(--border-width);
+
+  div {
+    border: solid red;
+    border-width: var(--border-width);
+  }
+  /* .container div.item1 */
+  .item1 {
+    margin-top: 4px;
+    margin-left: 4px;
+
+    * {
+      border: 2px dotted gray;
+    }
+
+    &:hover span {
+      background-color: rgb(137, 220, 209);
+    }
+  }
+  /* .container div.item2 */
+  & .item2 {
+    border-color: blueviolet;
+    margin: 14px 50px;
+    padding: 20px;
+    background-color: rgb(198, 219, 238);
+  }
+}

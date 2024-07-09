@@ -1,0 +1,39 @@
+* {
+  border: 1px solid red;
+}
+
+h1 {
+  border-color: lime;
+}
+
+#css {
+  border-color: pink;
+  margin: 10px 0;
+}
+
+.highlight {
+  background-color: yellow;
+  padding: 0 4px;
+  border: transparent;
+  border-radius: 15px;
+}
+
+.lime {
+  background-color: lime;
+}
+
+[href^="http"] {
+  border: none;
+  text-decoration: none;
+  --fon-size: 0.6rem;
+
+  &::before {
+    content: "🔗";
+    font-size: var(--fon-size);
+  }
+
+  &::after {
+    content: "🔗";
+    font-size: var(--fon-size);
+  }
+}

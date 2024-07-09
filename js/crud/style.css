@@ -1,0 +1,17 @@
+form {
+  section {
+    margin-bottom: 0.5rem;
+  }
+
+  label {
+    display: block;
+  }
+}
+
+.name {
+  cursor: pointer;
+}
+
+.bin {
+  cursor: pointer;
+}

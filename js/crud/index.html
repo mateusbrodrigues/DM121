@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" type="module" defer></script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Names List</legend>
+      <form id="formName" action="" onsubmit="return false">
+        <section>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required autofocus />
+        </section>
+        <section>
+          <button type="submit">Save</button>
+        </section>
+      </form>
+      <ol id="nameList"></ol>
+    </fieldset>
+    <template id="templateName">
+      <li>
+        <span class="name"></span>
+        <span class="bin">🗑️</span>
+      </li>
+    </template>
+  </body>
+</html>

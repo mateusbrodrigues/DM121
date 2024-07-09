@@ -1,0 +1,41 @@
+p {
+  text-align: justify;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+
+  &::first-letter {
+    color: red;
+    font-size: 50px;
+    float: left;
+    line-height: 49px;
+    padding-right: 10px;
+  }
+
+  &::first-line {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+  }
+
+  &::selection {
+    color: black;
+    background-color: yellow;
+  }
+
+  &:target {
+    background-color: rgb(232, 214, 250);
+    opacity: 1;
+  }
+}
+
+#first-one {
+  z-index: 1;
+}
+
+#second-one:target {
+  transform: translateY(-100%);
+  z-index: 0;
+}
